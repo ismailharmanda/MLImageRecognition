@@ -63,14 +63,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
                         let topResult = results.first
                         
                         DispatchQueue.main.async {
-                            let confidenceLevel = (topResult?.confidence ?? 0) * 100
+                            let confidenceLevel = Int((topResult?.confidence ?? 0) * 100)
 
-                            self.resultLabel.text = "\(confidenceLevel)% it's \(topResult?.identifier)"
+                            self.resultLabel.text = "\(confidenceLevel)% it's \(topResult!.identifier)"
                         }
                     }
                 }
             }
+            
+            let handler = VNImageRequestHandler(ciImage: image)
+            
+            DispatchQueue.global(qos: .userInteractive).async{
+                do{
+                    try handler.perform([request])
+                } catch {
+                    print(error)
+                }
+            }
         }
+        
+   
     }
     
 }

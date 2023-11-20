@@ -30,10 +30,10 @@
                                     <action selector="onPressChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4M-v0-6Al"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUk-29-LC0">
-                                <rect key="frame" x="94" y="481" width="204" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUk-29-LC0">
+                                <rect key="frame" x="16" y="481" width="361" height="54"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="pg5-j8-WKa"/>
+                                    <constraint firstAttribute="height" constant="54" id="CRN-sl-uk2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -44,13 +44,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s3w-Rf-Qyf" secondAttribute="bottom" constant="201" id="014-Op-qey"/>
-                            <constraint firstItem="VUk-29-LC0" firstAttribute="leading" secondItem="s3w-Rf-Qyf" secondAttribute="leading" id="14o-En-duX"/>
+                            <constraint firstItem="VUk-29-LC0" firstAttribute="top" secondItem="zRt-uf-cUf" secondAttribute="bottom" constant="33" id="680-6X-Vbq"/>
                             <constraint firstItem="s3w-Rf-Qyf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7MJ-p5-8RP"/>
-                            <constraint firstItem="VUk-29-LC0" firstAttribute="centerX" secondItem="zRt-uf-cUf" secondAttribute="centerX" id="9sO-wl-oh9"/>
                             <constraint firstItem="s3w-Rf-Qyf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Bay-gT-ObJ"/>
-                            <constraint firstItem="VUk-29-LC0" firstAttribute="trailing" secondItem="s3w-Rf-Qyf" secondAttribute="trailing" id="C7I-8R-rMq"/>
-                            <constraint firstItem="VUk-29-LC0" firstAttribute="top" secondItem="zRt-uf-cUf" secondAttribute="bottom" constant="33" id="ZQX-WW-P6T"/>
+                            <constraint firstItem="VUk-29-LC0" firstAttribute="centerX" secondItem="s3w-Rf-Qyf" secondAttribute="centerX" id="TeN-LF-NVH"/>
                             <constraint firstItem="zRt-uf-cUf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kRh-eR-Sgw"/>
+                            <constraint firstItem="VUk-29-LC0" firstAttribute="trailing" secondItem="zRt-uf-cUf" secondAttribute="trailing" id="pg6-NO-KkO"/>
+                            <constraint firstItem="VUk-29-LC0" firstAttribute="leading" secondItem="zRt-uf-cUf" secondAttribute="leading" id="snC-db-3kO"/>
                             <constraint firstItem="zRt-uf-cUf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t5i-ro-Ouy"/>
                         </constraints>
                     </view>
