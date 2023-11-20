@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import CoreML
+import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    
+    var chosenImage = CIImage()
     
     
     @IBOutlet weak var imageView: UIImageView!
@@ -32,8 +36,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        imageView.image = info[.originalImage] as? UIImage
-        self.dismiss(animated: true, completion: nil)
+      
+        
+        if let safeImage = info[.originalImage] as? UIImage {
+            imageView.image = info[.originalImage] as? UIImage
+            
+            let ciImage = CIImage(image: safeImage)
+            
+            chosenImage = ciImage!
+            
+            recognizeImage(image: chosenImage)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    
+    }
+    
+    func recognizeImage(image: CIImage){
+        
     }
     
 }

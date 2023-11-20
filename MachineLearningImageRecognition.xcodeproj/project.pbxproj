@@ -13,6 +13,7 @@
 		EC1C048C2B0BCFC9009E08DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1C048A2B0BCFC9009E08DC /* Main.storyboard */; };
 		EC1C048E2B0BCFCA009E08DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1C048D2B0BCFCA009E08DC /* Assets.xcassets */; };
 		EC1C04912B0BCFCA009E08DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1C048F2B0BCFCA009E08DC /* LaunchScreen.storyboard */; };
+		EC1C04992B0BD5BE009E08DC /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EC1C04982B0BD5BE009E08DC /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EC1C048D2B0BCFCA009E08DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC1C04902B0BCFCA009E08DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC1C04922B0BCFCA009E08DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC1C04982B0BD5BE009E08DC /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EC1C04832B0BCFC9009E08DC /* MachineLearningImageRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				EC1C04982B0BD5BE009E08DC /* MobileNetV2.mlmodel */,
 				EC1C04842B0BCFC9009E08DC /* AppDelegate.swift */,
 				EC1C04862B0BCFC9009E08DC /* SceneDelegate.swift */,
 				EC1C04882B0BCFC9009E08DC /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			files = (
 				EC1C04892B0BCFC9009E08DC /* ViewController.swift in Sources */,
 				EC1C04852B0BCFC9009E08DC /* AppDelegate.swift in Sources */,
+				EC1C04992B0BD5BE009E08DC /* MobileNetV2.mlmodel in Sources */,
 				EC1C04872B0BCFC9009E08DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
